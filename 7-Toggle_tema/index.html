@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js</title>
+    <style>
+        /* Definición del tema claro */
+        .claro {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Definición del tema oscuro */
+        .oscuro {
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+        /* Estilo del botón */
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Toggle de tema Oscuro/Claro {{ tema }}</h1>
+        <!-- Botón para cambiar el tema -->
+        <button @click="cambiarTema">Cambiar a tema {{ tema === 'claro' ? 'oscuro' : 'claro' }}</button>
+    </div>
+    
+    <!-- Archivo JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
+
